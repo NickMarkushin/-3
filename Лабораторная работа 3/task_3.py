@@ -65,5 +65,7 @@ main_str = """
 # TODO Распечатайте в столбик букву и её частоту в тексте
 
 letters = calculate_frequency(cpunt_letters(main_str))
-for key, value in letters.items():
-    print("{0}: {1}".format(key, value))
+
+for i in letters:
+    g=format(letters.get(i),'.2f')
+    print(f'{i}: {g}')
